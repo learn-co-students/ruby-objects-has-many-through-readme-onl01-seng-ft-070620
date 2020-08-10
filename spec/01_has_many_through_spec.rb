@@ -84,7 +84,7 @@ describe "Object relationships" do
   end
 
   describe "Customer" do
-    describe "#new_meal" do
+    describe "#new_meal" do    # done 
       it "initializes a meal using the current Customer instance, a provided Waiter instance and a total and tip" do
         howard = Customer.new("Howard", 30)
         terrance = Waiter.new("Terrance", 1)
@@ -95,7 +95,7 @@ describe "Object relationships" do
       end
     end
 
-    describe "#meals" do
+    describe "#meals" do              # done 
       it "returns an Array of Meal instances associated with this customer" do
         howard = Customer.new("Howard", 30)
         daniel = Customer.new("Daniel", 30)
@@ -121,7 +121,7 @@ describe "Object relationships" do
       end
     end
 
-    describe "#waiters" do
+    describe "#waiters" do       # done
       it "returns an Array of Waiter instances associated with this customer's meals" do
         howard = Customer.new("Howard", 30)
         daniel = Customer.new("Daniel", 30)
@@ -143,7 +143,7 @@ describe "Object relationships" do
   end
 
   describe "Waiter" do
-    describe "#new_meal" do
+    describe "#new_meal" do # done 
       it "initializes a meal using the current Waiter instance, a provided Customer instance and a total and tip" do
         howard = Customer.new("Howard", 30)
         terrance = Waiter.new("Terrance", 1)
